@@ -1,5 +1,11 @@
 BREW_INSTALL_URL = 'https://raw.githubusercontent.com/Homebrew/install/master/install'
 
+# Install brew
+execute "Install brew" do
+  command "ruby -e \"$(curl -fsSL #{BREW_INSTALL_URL})\""
+  not_if "test $(which brew)"
+end
+
 # Update brew
 enable_update = node['brew']['enable_update'] ? node['brew']['enable_update'] : false
 if enable_update
