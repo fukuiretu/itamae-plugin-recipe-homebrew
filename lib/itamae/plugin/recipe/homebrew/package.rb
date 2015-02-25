@@ -1,4 +1,4 @@
-include_recipe 'common'
+include_recipe 'common.rb'
 
 # Install bin packages
 node['brew']['install_packages'].each do |package|

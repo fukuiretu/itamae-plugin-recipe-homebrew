@@ -1,4 +1,4 @@
-include_recipe 'common'
+include_recipe 'common.rb'
 
 execute 'Install brew-cask' do
   command 'brew install brew-cask'
