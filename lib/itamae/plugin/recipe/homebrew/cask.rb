@@ -8,9 +8,9 @@ end
 # Install apps
 install_apps = node['brew']['install_apps']
 install_apps.each do |app|
-  execute 'Install apps' do
+  execute "Install application: #{app}" do
     command "brew cask install #{app} --appdir=\'/Applications\'"
-    not_if 'brew cask list | grep -q #{app}'
+    not_if "brew cask list | grep -q #{app}"
   end
 end
 
