@@ -23,7 +23,7 @@ end
 # Add Repository
 node['brew']['add_repositories'].each do |repo|
   execute 'Add Repository' do
-    command 'brew tap #{repo}'
+    command "brew tap #{repo}"
     not_if "brew tap | grep -q #{repo}"
   end
 end
