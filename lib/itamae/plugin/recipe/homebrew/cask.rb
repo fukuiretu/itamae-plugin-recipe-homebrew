@@ -1,7 +1,7 @@
 include_recipe 'common.rb'
 
 execute 'Install brew-cask' do
-  command 'brew install brew-cask'
+  command 'brew install caskroom/cask/brew-cask'
   not_if 'brew list | grep -q brew-cask'
 end
 
