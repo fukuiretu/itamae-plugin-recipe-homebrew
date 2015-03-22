@@ -88,11 +88,11 @@ brew:
     - bettertouchtool
 ```
 ##### Description of Option
-* ** enable_update ** : run the `brew update` If true
-* ** enable_upgrade ** : run the `brew upgrade` If true
-* ** add_repositories ** : run the `brew tap XXXXX`. To specify the repositories you want to add an array
-* ** install_packages ** : run the `brew install XXXXX`. To specify the packages you want to add an array
-* ** install_apps ** : run the `brew cask instal`. To specify the applications you want to add an array
+* **enable_update** : run the `brew update` If true
+* **enable_upgrade** : run the `brew upgrade` If true
+* **add_repositories** : run the `brew tap XXXXX`. To specify the repositories you want to add an array
+* **install_packages** : run the `brew install XXXXX`. To specify the packages you want to add an array
+* **install_apps** : run the `brew cask instal`. To specify the applications you want to add an array
 
 ## Contributing
 
