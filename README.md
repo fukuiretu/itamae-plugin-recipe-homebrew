@@ -1,6 +1,8 @@
 # itamae-plugin-recipe-homebrew
+[![Gem Version](https://badge.fury.io/rb/itamae-plugin-recipe-homebrew.svg)](http://badge.fury.io/rb/itamae-plugin-recipe-homebrew)
 
 Plugin to support the HomeBrew for [Itamae](https://github.com/itamae-kitchen/itamae)
+
 
 ## Installation
 
