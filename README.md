@@ -1,6 +1,6 @@
-# Itamae::Plugin::Recipe::Homebrew
+# itamae-plugin-recipe-homebrew
 
-TODO: Write a gem description
+Plugin to support the HomeBrew for [Itamae](https://github.com/itamae-kitchen/itamae)
 
 ## Installation
 
@@ -29,11 +29,10 @@ include_recipe 'homebrew::cask'
 ```
 
 ### Node
-Use this with itamae -y localhost.yml
+case was an example the yaml
 
 ##### your node example
 ```yaml
-# localhost.yml
 brew:
   enable_update: false
   enable_upgrade: false
@@ -72,6 +71,9 @@ brew:
     - mysql
     - postgresql
     - node
+    - redis
+    - rbenv
+    - ruby-build
   install_apps:
     - google-chrome
     - iterm2
@@ -82,7 +84,7 @@ brew:
     - dash
     - github
     - xtrafinder
-    - appcleane
+    - appcleaner
     - bettertouchtool
 ```
 ##### Description of Option
