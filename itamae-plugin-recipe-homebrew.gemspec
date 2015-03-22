@@ -8,11 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Itamae::Plugin::Recipe::Homebrew::VERSION
   spec.authors       = ["fukuiretu"]
   spec.email         = ["s0232101@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
-
+  spec.summary       = %q{Plugin to support the HomeBrew for Itamae}
+  spec.description   = %q{Plugin to support the HomeBrew for Itamae}
+  spec.homepage      = "https://github.com/fukuiretu/itamae-plugin-recipe-homebrew"
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
