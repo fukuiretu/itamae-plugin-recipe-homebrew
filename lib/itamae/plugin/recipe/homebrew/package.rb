@@ -2,8 +2,9 @@ include_recipe 'common.rb'
 
 # Install bin packages
 node['brew']['install_packages'].each do |package|
-  execute "Install package: #{package}" do
+  package_without_options = package.split(/[ \/]/).last
+  execute "Install package: #{package_without_options}" do
     command "brew install #{package}"
-    not_if "brew list | grep -q #{package}"
+    not_if "brew list | grep -q '#{package_without_options}$'"
   end
 end
