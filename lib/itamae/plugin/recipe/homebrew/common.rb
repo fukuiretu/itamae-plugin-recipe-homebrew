@@ -13,7 +13,7 @@ if enable_update
     command 'brew update'
   end
 else
-  Logger.info('Execution skipped Update brew because of not true enable_update')
+  Itamae.logger.info('Execution skipped Update brew because of not true enable_update')
 end
 
 # Upgrade brew
@@ -23,7 +23,7 @@ if enable_upgrade
     command 'brew upgrade'
   end
 else
-  Logger.info('Execution skipped Upgrade brew because of not true enable_upgrade')
+  Itamae.logger.info('Execution skipped Upgrade brew because of not true enable_upgrade')
 end
 
 # Add Repository
